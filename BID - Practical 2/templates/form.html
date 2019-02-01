@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/process">
+        <div class="form-group">
+          <label for="exampleInputFName">Enter First Name</label>
+          <input type="text" class="form-control" id="exampleInputFName" placeholder="Enter First Name" name="fname" value="{{request.form.fname}}">
+          
+        </div>
+
+        <div class="form-group">
+          <label for="exampleLInputFName">Enter Last Name</label>
+          <input type="text" class="form-control" id="exampleLInputFName" placeholder="Enter Last Name" name="lname">
+        </div>
+
+        <div class="form-group">
+            <label for="examplePeople">Enter No of People</label>
+            <input type="number" class="form-control" id="examplePeople" placeholder="Enter No of People" name="noOfPeople">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleType">Enter Seat Type</label>
+            <input type="text" class="form-control" id="exampleType" aria-describedby="seatHelp" placeholder="Enter Seat Type" name="seatType">
+            <small id="seatHelp" class="form-text text-muted">Enter D for Diamond , Enter G for Gold , Enter S for Silver.</small>
+          </div>
+  
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>
+</html>
